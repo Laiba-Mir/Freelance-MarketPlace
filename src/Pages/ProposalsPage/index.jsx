@@ -152,8 +152,10 @@ const IndexPage = () => {
   const totalPages = Math.ceil(proposals.length / rowsPerPage);
 
   return (
+    <>
+    <Header />
     <div className="proposals-page">
-      <Header />
+     
 
       <h1 className="proposals-heading">Proposals</h1>
 
@@ -281,6 +283,7 @@ const IndexPage = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 export default IndexPage;
